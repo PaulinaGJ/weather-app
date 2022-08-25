@@ -36,6 +36,7 @@ function showWeather(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
 }
 
 function searchCity(city) {
